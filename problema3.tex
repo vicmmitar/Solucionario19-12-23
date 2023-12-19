@@ -4,11 +4,30 @@
         I=\int\frac{dx}{x+\sqrt{x^2+x+1}}
     \end{equation*}
     Solución:\\
-    c.v.:
-    \begin{equation*}
-        \begin{split}
+
+    \begin{multicols}{2}
+        [c.v.:]
+        \begin{align*}
             \sqrt{x^2+x+1}&=t-x\qquad //()^2 \\
             \textcolor{red}{\cancel{x^2}}+x+1&=t^2-2tx+\textcolor{red}{\cancel{x^2}} \\
-            x(1+2t)&=t^2+1
-        \end{split}
+            x(1+2t)&=t^2+1\\
+        \end{align*}
+        \columnbreak
+        
+        Asi tenemos:
+        \begin{align*}
+            x&=\frac{t^2-1}{2t+1}\qquad//d()\\
+            dx&=\frac{2t\left(2t+1\right)-\left(t^2-1\right)}{(2t+1)^2}dt\\
+            &= \frac{2(t^2+t+1)}{(2t+1)^2}dt
+        \end{align*}
+    \end{multicols}        
+    Ahora reemplazando:
+    \begin{equation*}
+        I=\int\frac{1}{\cancel{x}+t-\cancel{x}}\cdot \frac{2(t^2+t+1)}{(2t+1)^2}\,dt = 
+        2\int\frac{t^2+t+1}{t(2t+1)^2}\,dt
     \end{equation*}
+    Ahora expandimos por fracciones parciales:
+    \begin{align*}
+        \int\frac{t^2+t+1}{t(2t+1)^2}\,dt\Rightarrow \frac{t^2+t+1}{t(2t+1)^2}&=\frac{A}{t}+\frac{B}{2t+1}+\frac{C}{(2t+1)^2}\qquad//t(2t+1)^2
+    \end{align*}
+
