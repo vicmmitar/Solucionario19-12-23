@@ -1,1 +1,12 @@
 \section{Problema 4}
+Resolver:
+\[I=\int \frac{dx}{x \sqrt{3x^2-2x-1}}\]
+Solución: \\
+C.V.:
+\[ \frac{1}{x}=t \quad \rightarrow \quad x=\frac{1}{t}\quad//d() \rightarrow dx=-\frac{1}{t^2}dt\]
+Reemplazando:
+\[I=\int \frac{-\frac{dt}{t^2}}{\qty (\frac{1}{t}) \cdot \sqrt{3\qty(\frac{1}{t})^2-2\qty(\frac{1}{t})-1}} = - \int \frac{dt}{t \cdot \sqrt{\frac{3-2t-t^2}{t^2}}} = - \int \frac{dt}{\sqrt{3-2t-t^2}}\]
+Completando cuadrados:
+\[I= - \int \frac{dt}{\sqrt{4-(t+1)^2}} = - \int \frac{d(t+1)}{\sqrt{2^2-(t+1)^2}}\]
+\[I=-  arcsin \qty (\frac{t+1}{2})+C \qquad \text{pero:} \qquad t=\frac{1}{x} \]
+\[\therefore I=- arcsin\left(\frac{1+x}{2x}\right)+C \] 
